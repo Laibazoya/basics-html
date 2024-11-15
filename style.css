@@ -1,0 +1,137 @@
+/* 1. Basic Structure */
+body {
+    background-color: #f0f0f0;  /* Page ka background color set karta hai */
+    font-family: Arial, sans-serif;  /* Page ki font family ko set karta hai */
+    font-size: 16px;  /* Text ka default font size set karta hai */
+    color: #333;  /* Text color set karta hai */
+    margin: 0;  /* Body se external space ko hata deta hai */
+    padding: 0;  /* Body mein internal space ko hata deta hai */
+}
+
+/* 2. Headings */
+h1 {
+    font-size: 36px;  /* Heading 1 ka font size set karta hai */
+    color: #333;  /* Heading ka color set karta hai */
+    text-align: center;  /* Heading ko center align karta hai */
+}
+
+/* 3. Paragraphs */
+p {
+    line-height: 1.6;  /* Paragraph text ke beech line height ko increase karta hai */
+    margin-bottom: 20px;  /* Paragraph ke neeche space add karta hai */
+}
+
+/* 4. Links */
+a {
+    color: blue;  /* Link ka color blue set karta hai */
+    text-decoration: none;  /* Link se underline hata deta hai */
+}
+
+a:hover {
+    color: red;  /* Jab user link pe hover kare to color red ho jata hai */
+    text-decoration: underline;  /* Hover pe underline dikhaata hai */
+}
+
+/* 5. Lists */
+ul {
+    list-style-type: square;  /* Unordered list mein bullet ko square banaata hai */
+    padding-left: 20px;  /* List ke items ko thoda left se shift karta hai */
+}
+
+ol {
+    list-style-type: decimal;  /* Ordered list ko numbered (decimal) banata hai */
+    padding-left: 20px;  /* List ko left se thoda shift karta hai */
+}
+
+li {
+    font-size: 16px;  /* List item ka font size set karta hai */
+}
+
+/* 6. Divs and Containers */
+.container {
+    width: 80%;  /* Container ki width ko 80% page width set karta hai */
+    margin: 0 auto;  /* Container ko horizontally center align karta hai */
+    padding: 20px;  /* Container ke andar 20px ka space add karta hai */
+    background-color: white;  /* Container ka background color white set karta hai */
+}
+
+/* 7. Buttons */
+button {
+    background-color: #4CAF50;  /* Button ka background color green set karta hai */
+    color: white;  /* Button text ka color white set karta hai */
+    border: none;  /* Button ke around kisi border ko hata deta hai */
+    padding: 10px 20px;  /* Button mein 10px vertical aur 20px horizontal padding deta hai */
+    text-align: center;  /* Button ke text ko center align karta hai */
+    cursor: pointer;  /* Button pe cursor ko pointer (hand) bana deta hai */
+}
+
+button:hover {
+    background-color: #45a049;  /* Hover pe button ka background color thoda dark green ho jata hai */
+}
+
+/* 8. Images */
+img {
+    width: 100%;  /* Image ko container ke width ke according adjust karta hai */
+    height: auto;  /* Image ki height ko auto adjust karta hai, aspect ratio maintain karta hai */
+}
+
+/* 9. Borders */
+div {
+    border: 2px solid #333;  /* Div ke around 2px wide solid border add karta hai */
+    border-radius: 10px;  /* Border ko rounded (corner radius) bana deta hai */
+}
+
+/* 10. Backgrounds */
+section {
+    background-color: #e0e0e0;  /* Section ka background color light grey set karta hai */
+    background-image: url('background.jpg');  /* Background image set karta hai */
+    background-size: cover;  /* Image ko section ke size ke hisaab se adjust karta hai */
+    background-position: center center;  /* Image ko center align karta hai */
+}
+
+/* 11. Display & Positioning */
+.container {
+    display: flex;  /* Flexbox layout ko apply karta hai */
+    justify-content: space-between;  /* Items ke beech mein space equal distribute karta hai */
+    align-items: center;  /* Items ko vertically center align karta hai */
+}
+
+header {
+    position: fixed;  /* Header ko fixed position pe rakhta hai (page ke top pe) */
+    top: 0;  /* Header ko page ke top pe position karta hai */
+    width: 100%;  /* Header ko page ki full width tak stretch karta hai */
+}
+
+/* 12. Flexbox Layout */
+.flex-container {
+    display: flex;  /* Flexbox layout ko activate karta hai */
+    flex-wrap: wrap;  /* Items ko wrap karne ki allow karta hai */
+}
+
+.flex-item {
+    flex: 1;  /* Items ko equally distribute karta hai */
+    margin: 10px;  /* Flex items ke beech margin add karta hai */
+}
+
+/* 13. Grid Layout */
+.grid-container {
+    display: grid;  /* CSS Grid layout ko activate karta hai */
+    grid-template-columns: repeat(3, 1fr);  /* Grid ko 3 equal columns mein divide karta hai */
+    gap: 20px;  /* Grid items ke beech 20px ka gap rakhta hai */
+}
+
+.grid-item {
+    background-color: lightblue;  /* Grid item ka background color light blue set karta hai */
+    padding: 20px;  /* Grid item mein padding add karta hai */
+}
+
+/* 14. Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Small screens pe font size thoda chhota kar deta hai */
+    }
+    
+    .container {
+        width: 100%;  /* Container ki width ko 100% set kar deta hai for small screens */
+    }
+}

@@ -1,0 +1,59 @@
+/* General reset to remove default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;  /* Font for the whole page */
+    background-color: #f4f4f9;  /* Light background color */
+    color: #333;  /* Text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;  /* Green background */
+    color: white;  /* White text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+/* About Me Section */
+.content h2 {
+    color: #4CAF50;  /* Green color for headings */
+}
+
+.content p {
+    font-size: 18px;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding-left: 0;
+}
+
+.skills li {
+    background-color: #ddd;  /* Grey background for skills */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;  /* Light grey text */
+    margin-top: 30px;
+}
